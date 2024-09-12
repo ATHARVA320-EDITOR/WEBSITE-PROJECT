@@ -1,0 +1,108 @@
+<html>
+<title>WEBSITE</title>
+<style>
+    
+    
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: red;
+    }
+
+    .topnav a {
+        float: left;
+        color: yellow;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: purple;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #ffe066;
+        color: black;
+    
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        font-size: small;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <span class="border trans" style="font-size: 40px; color: #ffe066;" <center>Welcome to our website</center>
+        <section>
+            <img class="mySlides" src="WORK 1.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 2.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 3.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 4.png" style="height: 300px; width: 500px;">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+            
+        </script>
+        <div class="topnav">
+            <a class="active" , href="home">Home</a>
+            <a href="about.html">About us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Contact us</a>
+            <body style="background-color: green;">
+                <h1 style="text-align: center;">Welcome to The Stickman Co.</h1>
+               
+                <p>Welcome to the world of Stickman Co. From Fiery Friends to Lighty's Adventures, you will find many comics of each genre.
+                    <br><br><br><br>
+                    <img src="STICKMAN CO..png" style="width: 200px;height: 200px;float: right;margin-left: 15px;"
+                 </p>
+                 <p>Now we will show you our all the current comic series-.</p>
+                 <br><br><br>
+                 <p>One of the best selling, The Stickman Chronicles!It is about Stickman friends who have different powers and they have a lot of fun! But when weird creatures called Androids attack their city, they use their powers to save the city.
+                    <img src="STICKMAN CHRONICLES.png"
+                    style=" height: 300px;float: right;margin-left: 15px;"
+                 </p>
+                 <br><br><br><br><br><br>
+                <p>Latest story, The Lighty's Story!! It is trending and is for teenagers.
+                   Lighty, with his friends tries to solve the mystery of The Power Triangle.Soon he discovers that each stickman has its own enoculus. Soon, he goes on a journey to find his enoculus. But Katakai, a villain had other plans. He wanted to steal the powers of The Power Triangle and wanted to become most powerful. Now Lighty with his friends has to stop him.
+                    <img src="LIGHTY’S STORY.png" style=" height: 300px;float: right;margin-left: 15px;" </p>
+                    <br><br><br><br><br><br>
+                    <p>This is our 2nd best selling comic series,The countryballs!! It is the story of circular balls based on the major wars in the world like World War 1, World War 2, Cold War. etc. These balls talk and it is a really funny comic series.</p>
+                        <img src="COUNTRYBALLS.png" style=" height: 300px;float: right;margin-left: 15px;" </p>
+                        <br><br><br><br><br><br>
+                        <p>This comic is for adventure lovers. In this comic, Animals named Fantastic Fox, Clever Cat, </p>
+                        <img src="FIERY FRIENDS.png" style=" height: 300px;float: right;margin-left: 15px;" </p>
+                        <br><br><br><br><br><br>
+                    <section class="section section-dark">
+                        <div class="footer">
+                            <p>***All @copyrights reserved by Atharva Kumar***</p>
+                        </div>
+
+
