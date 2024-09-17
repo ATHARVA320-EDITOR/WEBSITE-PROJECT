@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body> 
+        <h1>WELCOME TO OUR GALLERY!</h1>
+        <h3>You will see some of our finest works here</h3>
+        ENJOY!!
+                    <img class="mySlides" src="WORK 1.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 2.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 3.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 4.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 5.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 6.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 7.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 8.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 9.png" style="height: 300px; width: 500px;">
+            <img class="mySlides" src="WORK 10.png" style="height: 300px; width: 500px;">
+            <a href="index.html">GO BACK</a>
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+           
+
+        </script>
+    </body>
+</html>
